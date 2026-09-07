@@ -42,9 +42,12 @@ durchprobiert zu haben.
    Aufrunden der fraktionalen Muster-Nutzungen trifft nur in ~55 % der Fälle
    dieselbe Rollenzahl wie das wahre Optimum. Eine Instanz zeigt das
    besonders deutlich: Schranke exakt bei 6, Rundungslösung braucht 9 Rollen.
-   Der direkte Aufhänger für `branch-and-price-demo` (nächstes Stück), das
-   über echte Ryan-Foster-Verzweigung eine tatsächlich optimale
-   Ganzzahllösung erzwingt.
+   Der direkte Aufhänger für
+   [branch-and-price-demo](https://github.com/sebastian-hanisch/branch-and-price-demo)
+   (siebtes und letztes Stück dieser Linie), das über echte
+   Ryan-Foster-Verzweigung eine tatsächlich optimale Ganzzahllösung erzwingt -
+   auf genau der Instanz oben liefert es die korrekten 6 Rollen statt der
+   hier gezeigten 9.
 
 ## Verifikation
 
