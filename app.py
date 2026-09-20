@@ -85,7 +85,7 @@ PRESET_HELP = {
 preset_cols = st.columns(len(C.PRESETS))
 for i, name in enumerate(C.PRESETS.keys()):
     with preset_cols[i]:
-        st.button(name, use_container_width=True, on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
+        st.button(name, width="stretch", on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
 
 st.caption(
     "🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, "
@@ -106,7 +106,7 @@ with st.sidebar:
 
     st.button(
         "🎲 Neue Instanz generieren",
-        use_container_width=True,
+        width="stretch",
         on_click=randomize_seed,
         help="Würfelt neue Auftragsbreiten und -mengen.",
     )
@@ -143,13 +143,13 @@ current = result.iterations[step]
 
 chart_col, pattern_col = st.columns([3, 2])
 with chart_col:
-    st.plotly_chart(build_bound_chart(result, true_optimum, step), use_container_width=True, key=f"bound_{step}")
+    st.plotly_chart(build_bound_chart(result, true_optimum, step), width="stretch", key=f"bound_{step}")
 with pattern_col:
     if current.new_pattern is not None:
         st.markdown(f"**Neu aufgenommenes Muster** (reduzierte Kosten: {current.reduced_cost:.3f})")
     else:
         st.markdown("**Kein verbesserndes Muster mehr gefunden - LP-Optimum erreicht.**")
-    st.plotly_chart(build_pattern_bar(instance, current), use_container_width=True, key=f"pattern_{step}")
+    st.plotly_chart(build_pattern_bar(instance, current), width="stretch", key=f"pattern_{step}")
 
 lm1, lm2, lm3 = st.columns(3)
 lm1.metric("Master-Zielfunktion (bisher)", f"{current.master_objective:.3f}")
@@ -160,7 +160,7 @@ st.markdown("---")
 
 st.subheader("📐 Wie eng ist diese Schranke wirklich?")
 cmp = bound_comparison(instance, result, true_optimum)
-st.plotly_chart(build_bound_comparison_chart(cmp), use_container_width=True, key="bound_comparison")
+st.plotly_chart(build_bound_comparison_chart(cmp), width="stretch", key="bound_comparison")
 
 bc1, bc2, bc3 = st.columns(3)
 bc1.metric("Einfache Schranke", cmp["weak_bound"], help="Gesamtbreite aller Aufträge geteilt durch Rollenbreite, aufgerundet - wie in cutting-stock-branch-cut-demo.")
