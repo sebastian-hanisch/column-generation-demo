@@ -238,10 +238,10 @@ in jedem hier per Sweep geprüften Fall) gilt $\lceil \text{LP-Optimum}
 \rceil = $ wahres Ganzzahl-Optimum für Cutting Stock - eine der bekanntesten
 empirischen Beobachtungen der Cutting-Stock-Literatur. Sie ist aber NICHT
 allgemein bewiesen; bekannte, extrem seltene und künstlich konstruierte
-Gegenbeispiele existieren (z. B. Marcotte 1985).
+Gegenbeispiele existieren (z. B. Marcotte 1986).
 
 **Warum die Schranke nicht automatisch die Lösung liefert**: das Master-LP
-liefert fraktionale $\lambda_p$ - naives Aufrunden kann beliebig viele Rollen
+liefert fraktionale $\lambda_p$ - naives Aufrunden kann bis zu eine Rolle je verwendetem Muster
 zu viel verwenden. Implementiert in `cg_master.py` (Master-LP),
 `cg_pricing.py` (Pricing-DP), `cg_solver.py` (die Schleife) und
 `cg_bruteforce.py` (unabhängige Referenzlösung für Tests).
@@ -252,6 +252,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html)."
 )

@@ -36,7 +36,7 @@ durchprobiert zu haben.
    die aus der Literatur bekannte **Integer-Round-Up-Property (IRUP)**, die
    in der weit überwiegenden Praxis, aber NICHT beweisbar universell gilt
    (extrem seltene, künstlich konstruierte Gegenbeispiele existieren, z. B.
-   Marcotte 1985).
+   Marcotte 1986).
 3. **Liefert eine enge Schranke automatisch auch eine gute Lösung?**
    Überraschenderweise NEIN - der wichtigste Fund dieses Stücks: naives
    Aufrunden der fraktionalen Muster-Nutzungen trifft nur in ~55 % der Fälle
@@ -96,6 +96,4 @@ pytest tests/ -v
 
 ---
 
-Teil des [Operations-Research-Demo-Portfolios](https://sebastianhanisch.net/demos.html) von
-[Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
-Interesse an einer maßgeschneiderten Lösung? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html).
