@@ -39,7 +39,8 @@ durchprobiert zu haben.
    Marcotte 1986).
 3. **Liefert eine enge Schranke automatisch auch eine gute Lösung?**
    Überraschenderweise NEIN - der wichtigste Fund dieses Stücks: naives
-   Aufrunden der fraktionalen Muster-Nutzungen trifft nur in ~55 % der Fälle
+   Aufrunden der fraktionalen Muster-Nutzungen trifft nur in rund der Hälfte der Fälle
+   (~48 %; 240 Instanzen: 2-7 Typen, Bedarf 1-4, Rollenbreite 100, Seeds 0-9)
    dieselbe Rollenzahl wie das wahre Optimum. Eine Instanz zeigt das
    besonders deutlich: Schranke exakt bei 6, Rundungslösung braucht 9 Rollen.
    Der direkte Aufhänger für
